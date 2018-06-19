@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeerAPP</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/beerControll.js"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			bringBeer();
+		});
+	</script>
+</head>
+<body>
+	<div class="jumbotron text-center">
+	  <h1>The Random Beer App</h1>
+	  <p>Clink on the buttom for change the beer... <button class="btn-success" onclick=bringBeer()>Show Another Beer</button></p> 
+	</div>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-4">
+	      <h3>BEER</h3>
+	      <img src="/BeerApp/images/cerveja.jpg">
+	    </div>
+	    <div class="col-sm-4"></div>
+	    <div class="col-sm-4">
+	      <h1 id="name"/></h1>
+	      <p id="description"></p>
+	      <h4>Brewery Location: <label id="breweryLocation"/></h4>
+	      <h4>Alcohol: <label id="alcohol"/></h4>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
